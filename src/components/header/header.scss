@@ -1,0 +1,159 @@
+.headerWrapper {
+  background: linear-gradient(to right, #1a1a1abb, #1a1a1abb),
+    url("../../assets/headerBcgr3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .headerHolder {
+    height: 600px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    .headerNav {
+      nav {
+        display: flex;
+        justify-content: right;
+        /******************ACTIVE PAGE START*********************/
+        .page {
+          height: 60px;
+          margin-right: 35px;
+          position: relative;
+          transition: 0.5s;
+          a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            color: #ffffff;
+            transition: 0.7s;
+          }
+          .gray {
+            color: gray;
+            transition: 0.7s;
+          }
+        }
+        .active {
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            top: 30px;
+            left: 0;
+            background-color: #ffee00;
+            cursor: auto;
+            animation: fadeIn 0.7s;
+          }
+        }
+        /******************ACTIVE PAGE END*********************/
+      }
+    }
+
+    .headerCentral {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .headerCentralHolder {
+        width: 500px;
+        height: 250px;
+        display: flex;
+        .vertical {
+          width: 10px;
+          height: 100%;
+          border-radius: 20px;
+          background-color: #fff;
+          margin-right: 50px;
+        }
+        .headerDetails {
+          color: #fff;
+          p {
+            font-size: 20px;
+            margin: 15px 0 0 0;
+          }
+
+          h1 {
+            font-size: 50px;
+            margin: 10px 0 20px 0;
+          }
+
+          span {
+            font-size: 25px;
+          }
+        }
+        .personalCV {
+          width: 150px;
+          height: 35px;
+          border: 2px solid #ffee00;
+          margin-top: 30px;
+          background-color: transparent;
+          color: #fff;
+          cursor: pointer;
+          font-weight: 700;
+          transition: 0.7s;
+          font-size: 14px;
+          &:hover {
+            transition: 0.7s;
+            background-color: #ffee00;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+//////////////////////////////RESPONSIVE/////////////////////////////////////
+
+@media screen and (max-width: 575px) {
+  .headerWrapper .headerHolder .headerNav nav {
+    justify-content: center;
+  }
+  .headerWrapper .headerHolder .headerCentral .headerCentralHolder {
+    height: 225px;
+    a {
+      text-decoration: none;
+      .personalCV {
+        display: block;
+        margin-top: 18px;
+      }
+    }
+  }
+  .headerWrapper .headerHolder .headerCentral .headerCentralHolder {
+    .vertical {
+      width: 5px;
+      margin-right: 15px;
+    }
+    .headerDetails {
+      p {
+        font-size: 14px;
+        margin: 15px 0 0 0;
+      }
+      h1 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .headerWrapper .headerHolder .headerNav nav .page a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    transition: 0.7s;
+  }
+}
+
+/////////////////////////////////////ANIMATION//////////////////////////////
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

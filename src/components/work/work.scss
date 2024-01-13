@@ -1,0 +1,79 @@
+.workWrapper {
+  height: 600px;
+  .workHolder {
+    padding: 40px 60px;
+    .workHeading {
+      .workHeadingHolder {
+        width: fit-content;
+        h1 {
+          margin: 0;
+        }
+        .workLine {
+          height: 5px;
+          width: 60px;
+          background-color: #ffee00;
+        }
+      }
+    }
+    .previousWork {
+      .previousP {
+        p {
+          font-size: 20px;
+        }
+      }
+      .previousWorkList {
+        .projectList {
+          margin: 15px 0;
+          a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .techlogyInUseWrapper {
+      margin-top: 100px;
+      .technologyHeading {
+        border-top: 2px solid #ffee00;
+        margin-bottom: 30px;
+      }
+      .technologyInUse {
+        display: flex;
+        .singleTechnology {
+          font-size: 70px;
+          margin-right: 50px;
+        }
+        .singleTechnologyPic {
+          margin: auto 50px auto 0;
+
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////
+
+@media screen and (max-width: 768px) {
+  .workWrapper .workHolder .techlogyInUseWrapper {
+    .technologyInUse {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      .singleTechnology,
+      .singleTechnologyPic {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .workWrapper .workHolder .previousWork {
+    font-size: 14px;
+  }
+}
