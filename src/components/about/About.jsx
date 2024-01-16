@@ -25,7 +25,7 @@ export default function About() {
                   </div>
                   <div className="line">
                     <p>
-                      <strong>Date Of Birth</strong> | Avgust 12 1992
+                      <strong>Date Of Birth</strong> | Avgust 12, 1992
                     </p>
                   </div>
                   <div className="line">
@@ -38,6 +38,11 @@ export default function About() {
                   <div className="line">
                     <p>
                       <strong>Country and City</strong> | Serbia, Bor
+                    </p>
+                  </div>
+                  <div className="line">
+                    <p>
+                      <strong>Nationality</strong> | Serbian
                     </p>
                   </div>
                   <div className="line">
