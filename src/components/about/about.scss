@@ -22,7 +22,10 @@
         .aboutPic {
           width: 350px;
           height: 350px;
-          background-color: black;
+          text-align: center;
+          img {
+            height: 100%;
+          }
         }
         .aboutInfoMain {
           .aboutInfo {

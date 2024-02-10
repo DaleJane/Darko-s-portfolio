@@ -23,7 +23,7 @@ export default function Work() {
               <Link to="/">#1 COMIC CORNER</Link>
             </div>
             <div className="projectList">
-              <Link to="/">#2 COMIC SHOP &#40;working version&#41;</Link>
+              <Link to="/">#2 COMIC SHOP</Link>
             </div>
           </div>
         </div>

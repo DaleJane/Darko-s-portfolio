@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.scss";
 import { Link } from "react-router-dom";
+import darkopic from "../../assets/darko.jpeg";
 
 export default function About() {
   return (
@@ -14,7 +15,9 @@ export default function About() {
         </div>
         <div className="aboutInfoWrapper">
           <div className="aboutInfoHolder">
-            <div className="aboutPic"></div>
+            <div className="aboutPic">
+              <img src={darkopic} alt="darko" />
+            </div>
             <div className="aboutInfoMain">
               <div className="aboutInfo">
                 <div className="infoLeftRight">
@@ -43,11 +46,6 @@ export default function About() {
                   <div className="line">
                     <p>
                       <strong>Nationality</strong> | Serbian
-                    </p>
-                  </div>
-                  <div className="line">
-                    <p>
-                      <strong>Marriage Status</strong> | Married
                     </p>
                   </div>
                 </div>
