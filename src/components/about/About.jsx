@@ -51,7 +51,10 @@ export default function About() {
                 </div>
               </div>
               <div className="profiles">
-                <Link to="/">
+                <Link
+                  to="https://github.com/DaleJane?tab=repositories"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-square-github"></i>
                 </Link>
                 <Link to="/">

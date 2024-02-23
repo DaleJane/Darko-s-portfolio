@@ -20,7 +20,9 @@ export default function Work() {
           </div>
           <div className="previousWorkList">
             <div className="projectList">
-              <Link to="/">#1 COMIC CORNER</Link>
+              <Link to="https://darkoreactprojectcomics.com/" target="_blank">
+                #1 COMIC CORNER
+              </Link>
             </div>
             <div className="projectList">
               <Link to="/">#2 COMIC SHOP</Link>
