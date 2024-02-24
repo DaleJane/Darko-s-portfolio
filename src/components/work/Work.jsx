@@ -25,7 +25,12 @@ export default function Work() {
               </Link>
             </div>
             <div className="projectList">
-              <Link to="/">#2 COMIC SHOP</Link>
+              <Link
+                to="https://darkoreactprojectcomicsshop.com/"
+                target="_blank"
+              >
+                #2 COMIC SHOP
+              </Link>
             </div>
           </div>
         </div>
