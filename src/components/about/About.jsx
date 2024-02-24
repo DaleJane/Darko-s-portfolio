@@ -57,10 +57,16 @@ export default function About() {
                 >
                   <i className="fa-brands fa-square-github"></i>
                 </Link>
-                <Link to="https://www.upwork.com/freelancers/~0166727e3134b953ed">
+                <Link
+                  to="https://www.upwork.com/freelancers/~0166727e3134b953ed"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-upwork"></i>
                 </Link>
-                <Link to="https://www.linkedin.com/in/darko-jankovic-18a67b2b6/">
+                <Link
+                  to="https://www.linkedin.com/in/darko-jankovic-18a67b2b6/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-linkedin"></i>
                 </Link>
               </div>
