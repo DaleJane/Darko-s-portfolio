@@ -44,7 +44,12 @@ export default function Work() {
                   <h3>#1 COMIC CORNER</h3>
                 </div>
                 <div className="cardButton">
-                  <button>Go to project</button>
+                  <Link
+                    to="https://darkoreactprojectcomics.com/"
+                    target="_blank"
+                  >
+                    <button>Go to project</button>{" "}
+                  </Link>
                 </div>
               </div>
             </div>
@@ -57,7 +62,12 @@ export default function Work() {
                   <h3>#2 COMIC SHOP</h3>
                 </div>
                 <div className="cardButton">
-                  <button>Go to project</button>
+                  <Link
+                    to="https://darkoreactprojectcomicsshop.com/"
+                    target="_blank"
+                  >
+                    <button>Go to project</button>
+                  </Link>
                 </div>
               </div>
             </div>
