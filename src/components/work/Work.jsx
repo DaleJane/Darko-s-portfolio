@@ -3,6 +3,8 @@ import "./work.scss";
 import { Link } from "react-router-dom";
 import scss from "../../assets/scssIcon.png";
 import redux from "../../assets/reduxIcon.png";
+import project1 from "../../assets/project1.png";
+import project2 from "../../assets/project2.png";
 
 export default function Work() {
   return (
@@ -19,7 +21,7 @@ export default function Work() {
             <p>Check out my previous work:</p>
           </div>
           <div className="previousWorkList">
-            <div className="projectList">
+            {/* <div className="projectList">
               <Link to="https://darkoreactprojectcomics.com/" target="_blank">
                 #1 COMIC CORNER
               </Link>
@@ -31,6 +33,33 @@ export default function Work() {
               >
                 #2 COMIC SHOP
               </Link>
+            </div> */}
+
+            <div className="cardProjectHolder">
+              <div className="cardImageHolder">
+                <img src={project1} alt="project1" />
+              </div>
+              <div className="cardTextButtonHolder">
+                <div className="cardText">
+                  <h3>#1 COMIC CORNER</h3>
+                </div>
+                <div className="cardButton">
+                  <button>Go to project</button>
+                </div>
+              </div>
+            </div>
+            <div className="cardProjectHolder">
+              <div className="cardImageHolder">
+                <img src={project2} alt="project2" />
+              </div>
+              <div className="cardTextButtonHolder">
+                <div className="cardText">
+                  <h3>#2 COMIC SHOP</h3>
+                </div>
+                <div className="cardButton">
+                  <button>Go to project</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -22,12 +22,57 @@
         }
       }
       .previousWorkList {
-        .projectList {
-          margin: 15px 0;
-          a {
-            text-decoration: none;
-            color: #000;
-            font-weight: 700;
+        display: flex;
+        // .projectList {
+        //   margin: 15px 0;
+        //   a {
+        //     text-decoration: none;
+        //     color: #000;
+        //     font-weight: 700;
+        //   }
+        // }
+        .cardProjectHolder {
+          height: 300px;
+          width: 250px;
+          margin-left: 25px;
+          border: 1px solid #e6e6e6;
+          .cardImageHolder {
+            border-bottom: 1px solid #e6e6e6;
+            overflow: hidden;
+            img {
+              width: 100%;
+              transition: 0.2s;
+            }
+          }
+          &:hover img {
+            transform: scale(1.2);
+            transition: 0.4s;
+          }
+        }
+        .cardTextButtonHolder {
+          padding: 15px;
+          // .cardText {
+          // }
+          .cardButton {
+            text-align: center;
+            button {
+              cursor: pointer;
+              width: 80%;
+              height: 35px;
+              border: 2px solid #ffee00;
+              margin-top: 30px;
+              background-color: transparent;
+              color: #000000;
+              cursor: pointer;
+              font-weight: 700;
+              transition: 0.7s;
+              font-size: 14px;
+              &:hover {
+                transition: 0.7s;
+                background-color: #ffee00;
+                color: #000;
+              }
+            }
           }
         }
       }
@@ -72,8 +117,37 @@
   }
 }
 
+@media screen and (max-width: 675px) {
+  .workWrapper .workHolder .previousWork .previousWorkList {
+    flex-direction: column;
+    align-items: center;
+    .cardProjectHolder {
+      margin: 30px 0 0 0;
+    }
+  }
+  .workWrapper .workHolder .techlogyInUseWrapper {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .workWrapper .workHolder .previousWork {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .workWrapper
+    .workHolder
+    .previousWork
+    .previousWorkList
+    .cardTextButtonHolder
+    .cardButton
+    button {
+    margin-top: 70px;
+  }
+
+  .workWrapper .workHolder .previousWork .previousWorkList .cardProjectHolder {
+    width: 180px;
   }
 }
